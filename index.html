@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main>
+    <div class="main__start">
+      <h1>TIC-TAC-TOE</h1>
+      <div class="main__start-buttons">
+        <h3>Pick who goes first?</h3>
+        <div>
+          <button class="button-left"><img src="./img/Vector 1.svg" alt="крест"></button>
+          <button class="button-right"><img src="./img/Ellipse 1.svg" alt="круг"></button>
+        </div>
+        <div class="quickGame">
+          <p>Quick game</p>
+          <label class="switch">
+            <input type="checkbox" id="quickGame__checkbox">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="time">0:05</div>
+      <h2>Player 1's Turn</h2>
+      <div class="wrapper__field">
+        <button class="wrapper__field-cell"></button>
+        <button class="wrapper__field-cell"></button>
+        <button class="wrapper__field-cell"></button>
+        <button class="wrapper__field-cell"></button>
+        <button class="wrapper__field-cell"></button>
+        <button class="wrapper__field-cell"></button>
+        <button class="wrapper__field-cell"></button>
+        <button class="wrapper__field-cell"></button>
+        <button class="wrapper__field-cell"></button>
+      </div>
+    </div>
+  </main>
+  <script src="./app.js" defer></script>
+</body>
+</html>
