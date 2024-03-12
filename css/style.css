@@ -14,7 +14,8 @@ main {
 
 h1,
 h2,
-h3 {
+h3,
+.wrapper__win > p {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 42px;
@@ -75,7 +76,8 @@ h3 {
   cursor: pointer;
 }
 
-.time {
+.time,
+.totalTime {
   border-radius: 100px;
   width: 149px;
   height: 55px;
@@ -87,6 +89,12 @@ h3 {
   line-height: 55px;
   color: var(--black);
   margin-bottom: 23px;
+}
+
+.totalTime {
+  position: absolute;
+  left: 10px;
+  top: 5px;
 }
 
 .main__start {
@@ -194,3 +202,52 @@ input:checked + .slider:before {
   width: 100%;
   margin-top: 20px;
 }
+
+.wrapper__win {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  border-radius: 20px;
+  box-shadow: -1px 1px 7px 3px rgba(0, 0, 0, 0.25);
+  background-color: var(--white);
+  animation: change-background 4s linear infinite;
+}
+
+@keyframes change-background {
+  0% {
+    background: #69b7eb;
+  }
+  50% {
+    background: #b3dbd3;
+  }
+  100% {
+    background: #f4d6db;
+  }
+}
+
+.wrapper__win > p {
+  color: var(--black);
+}
+
+.wrapper__win-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 50px;
+  border-radius: 15px;
+  box-shadow: -1px 1px 7px 3px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.wrapper__win-button:hover {
+  width: 142px;
+  height: 52px;
+}
+
+
