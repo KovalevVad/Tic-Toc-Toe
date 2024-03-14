@@ -15,8 +15,8 @@
       <div class="main__start-buttons">
         <h3>Pick who goes first?</h3>
         <div>
-          <button class="button-left"><img src="./img/Vector 1.svg" alt="крест"></button>
-          <button class="button-right"><img src="./img/Ellipse 1.svg" alt="круг"></button>
+          <button class="button-left"><img src="./img/cross.svg" alt="крест"></button>
+          <button class="button-right"><img src="./img/circle.svg" alt="круг"></button>
         </div>
         <div class="quickGame">
           <p>Quick game</p>
@@ -26,10 +26,14 @@
           </label>
         </div>
       </div>
+      <div class="main__start-person">
+        <p class="person" id="personOne"></p>
+        <p class="person" id="personTwo"></p>
+      </div>
     </div>
     <div class="wrapper">
       <div class="time">0:05</div>
-      <div class="totalTime">0:00</div>
+      <div class="totalTime">00:00</div>
       <h2>Player 1's Turn</h2>
       <div class="wrapper__field">
         <button class="wrapper__field-cell"></button>
@@ -48,6 +52,6 @@
       </div>
     </div>
   </main>
-  <script src="./app.js" defer></script>
+  <script type="module" src="./script/app.js" defer></script>
 </body>
 </html>

@@ -250,4 +250,52 @@ input:checked + .slider:before {
   height: 52px;
 }
 
+.main__start-person {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  background-image: url(/img/list.svg);
+  background-repeat: no-repeat;
+}
+
+.main__start-person:hover {
+  display: block;
+  width: 200px;
+  height: 100px;
+  border-radius: 10px;
+  transition: all 0.7s ease-in-out;
+  animation: сhangeSVG 2s forwards;
+  background-image: none;
+  background-color: var(--white);
+}
+
+.main__start-person:hover > .person {
+  opacity: 1;
+  transition: opacity 5s ease;
+}
+
+.main__start-person > .person {
+  width: 150px;
+  opacity: 0;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  color: var(--black);
+  text-shadow: 2px 2px 8px 0 var(--text-shadow);
+}
+
+@keyframes changeSVG {
+  0% {
+    width: 100px;
+   height: 50px;
+  }
+  100% {
+    width: 200px;
+    height: 100px;
+  }
+}
 
